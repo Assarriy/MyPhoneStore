@@ -17,7 +17,7 @@
         <item>iPhone 11</item>
     </string-array>
 
-    <string-array name="data_price">
+    <string-array name="data_harga">
         <item>Rp. 20.999.000</item>
         <item>Rp 16.499.000</item>
         <item>Rp 17.499.000</item>

@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun getListIphone(): ArrayList<Phone> {
         val dataName = resources.getStringArray(R.array.data_name)
+        val dataPrice = resources.getStringArray(R.array.data_harga)
         val dataDescription = resources.getStringArray(R.array.data_description)
-        val dataPrice = resources.getStringArray(R.array.data_price)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
         val listIphone = ArrayList<Phone>()
         for (i in dataName.indices){
-            val phone = Phone(dataName[i], dataDescription[i], dataPrice[i], dataPhoto.getResourceId(i, -1))
+            val phone = Phone(dataName[i], dataPrice[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
             listIphone.add(phone)
         }
         return listIphone
