@@ -3,11 +3,11 @@ package com.assarriy.myphonestore
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.renderscript.ScriptGroup.Binding
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var rvIphone: RecyclerView
     private val list = ArrayList<Phone>()
 
