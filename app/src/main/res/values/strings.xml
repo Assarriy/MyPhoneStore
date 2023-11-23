@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">My Phone Store</string>
+    <string name="phone_name">Nama Hp</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+
+    <string-array name="data_name">
+        <item>iPhone 15 Pro</item>
+        <item>iPhone 15</item>
+        <item>iPhone 14 Pro</item>
+        <item>iPhone 14</item>
+        <item>iPhone 13 Pro</item>
+        <item>iPhone 13</item>
+        <item>iPhone 12 Pro</item>
+        <item>iPhone 12</item>
+        <item>iPhone SE Generasi 3</item>
+        <item>iPhone 11</item>
+    </string-array>
+
+    <string-array name="data_price">
+        <item>Rp. 20.999.000</item>
+        <item>Rp 16.499.000</item>
+        <item>Rp 17.499.000</item>
+        <item>Rp 13.499.000</item>
+        <item>Rp 13.999.000</item>
+        <item>Rp 11.999.000</item>
+        <item>Rp 12.999.000</item>
+        <item>Rp 9.999.000</item>
+        <item>Rp 7.999.000</item>
+        <item>Rp 7.499.000</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>iPhone 15 Pro. Lahir dari titanium dan dilengkapi chip A17 Pro terobosan, tombol Tindakan yang dapat disesuaikan, dan sistem kamera Pro yang lebih serbaguna.</item>
+        <item>iPhone 15 menghadirkan Dynamic Island, kamera Utama 48 MP, dan USB-C — semuanya dalam desain aluminium dan kaca berwarna yang tangguh.</item>
+        <item>iPhone 14 Pro. Memotret detail menakjubkan dengan kamera Utama 48 MP. Nikmati iPhone dalam cara yang sepenuhnya baru dengan layar yang Selalu Aktif dan Dynamic Island. Deteksi Tabrakan, sebuah fitur keselamatan baru, memanggil bantuan saat Anda tak bisa.</item>
+        <item>iPhone 14. Dengan sistem kamera ganda paling hebat di iPhone. Ambil foto yang memukau dalam pencahayaan rendah maupun terang. Deteksi Tabrakan,1 sebuah fitur keselamatan baru, memanggil bantuan saat Anda tak bisa.</item>
+        <item>iPhone 13 Pro. Pembaruan sistem kamera Pro yang terbesar. Layar Super Retina XDR dengan ProMotion untuk penggunaan yang terasa lebih cepat dan responsif. Chip A15 Bionic yang secepat kilat. Desain kokoh dan lompatan besar dalam kekuatan baterai.</item>
+        <item>iPhone 13. Sistem kamera ganda paling canggih yang pernah ada di iPhone. Chip A15 Bionic yang secepat kilat. Lompatan besar dalam kekuatan baterai. Desain kokoh. Dan layar Super Retina XDR yang lebih cerah.</item>
+        <item>iPhone 12 Pro. Layar Super Retina XDR 6,1 inci yang begitu cerah.1 Ceramic Shield dengan ketahanan jatuh empat kali lebih baik.2 Fotografi pencahayaan rendah yang menakjubkan dengan sistem kamera Pro baru, dan rentang zoom optik 4x. Mampu merekam, mengedit, dan memutar video sekelas sinema dengan Dolby Vision. Potret mode Malam dan pengalaman AR di level berikutnya dengan LiDAR Scanner. Chip A14 Bionic yang andal. Dan aksesori MagSafe baru untuk kemudahan pemasangan dan pengisian daya nirkabel yang lebih cepat.3 Untuk berjuta kemungkinan spektakuler.</item>
+        <item>iPhone 12. Layar Super Retina XDR 6,1 inci yang begitu cerah.1 Ceramic Shield dengan ketahanan jatuh empat kali lebih baik.2 Fotografi pencahayaan rendah yang menakjubkan dengan mode Malam di semua kamera. Mampu merekam, mengedit, dan memutar video sekelas sinema dengan Dolby Vision. Chip A14 Bionic yang andal. Dan aksesori MagSafe baru untuk kemudahan pemasangan dan pengisian daya nirkabel yang lebih cepat.3 Saatnya bersenang-senang.</item>
+        <item>Chip A15 Bionic yang secepat kilat dan 5G cepat(1). Kekuatan baterai tahan lama dan kamera superstar. Selain itu, kaca paling kuat di ponsel pintar dan tombol Home dengan Touch ID yang aman.</item>
+        <item>Sistem kamera ganda baru merekam lebih banyak lagi hal yang Anda lihat dan sukai. Chip paling cepat yang pernah ada di ponsel pintar dan kekuatan baterai sepanjang hari memungkinkan Anda melakukan lebih banyak hal tanpa perlu sering mengisi daya. Dan kualitas video terbaik di ponsel pintar, jadi kenangan Anda terlihat lebih baik daripada sebelumnya. Layar Liquid Retina sepenuhnya 6,1 inci yang begitu penuh warna. Desain layar sepenuhnya yang begitu nyata menjadikan segalanya terlihat mengagumkan. Dengan material aluminium sekelas industri dirgantara yang kuat dan tahan lama. Membuat iPhone 11 begitu mengagumkan dikelasnya. Dengan Chip A13 Bionic yang begitu andal, semua yang Anda lakukan begitu cepat dan lancar dan juga mampu bekerja dengan cara yang paling menghemat daya, sehingga baterai lebih tahan lama.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/iphone_15_pro</item>
+        <item>@drawable/iphone_15</item>
+        <item>@drawable/iphone_14_pro</item>
+        <item>@drawable/iphone_14</item>
+        <item>@drawable/iphone_13_pro</item>
+        <item>@drawable/iphone_13</item>
+        <item>@drawable/iphone_12_pro</item>
+        <item>@drawable/iphone_12</item>
+        <item>@drawable/iphone_se_3</item>
+        <item>@drawable/iphone_11</item>
+    </integer-array>
+
+</resources>
