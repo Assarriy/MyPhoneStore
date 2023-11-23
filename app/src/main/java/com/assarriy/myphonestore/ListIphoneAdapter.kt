@@ -8,16 +8,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class ListIphoneAdapter(private val listIphone: ArrayList<Phone>) : RecyclerView.Adapter<ListIphoneAdapter.ListViewHolder>(){
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+class ListIphoneAdapter(private val listIphone: ArrayList<Phone>) :
+    RecyclerView.Adapter<ListIphoneAdapter.ListViewHolder>() {
+    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhone: ImageView = itemView.findViewById(R.id.img_item_product)
-        val tvName : TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvPrice : TextView = itemView.findViewById(R.id.tv_item_price)
-        val tvDescription : TextView = itemView.findViewById(R.id.tv_item_description)
+        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
+        val tvPrice: TextView = itemView.findViewById(R.id.tv_item_price)
+        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_product, parent, false)
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_row_product, parent, false)
         return ListViewHolder(view)
     }
 
@@ -34,5 +36,6 @@ class ListIphoneAdapter(private val listIphone: ArrayList<Phone>) : RecyclerView
             .load(photo)
             .into(holder.imgPhone)
     }
+
 
 }
