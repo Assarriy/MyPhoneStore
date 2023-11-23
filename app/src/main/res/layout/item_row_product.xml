@@ -60,8 +60,7 @@
                 android:maxLines="2"
                 android:text="@string/description"
                 android:textSize="12sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
