@@ -11,16 +11,61 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/phone_name"
         android:background="#232D3F"
-        app:titleTextColor="@color/white"
-        app:titleTextAppearance="@style/ToolbarFont"/>
+        app:title="@string/phone_name"
+        app:titleTextAppearance="@style/ToolbarFont"
+        app:titleTextColor="@color/white" />
 
     <ImageView
+        android:id="@+id/img_item_product"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_below="@id/toolbar"
         android:padding="20dp"
-        android:src="@drawable/iphone_15_pro"
-        android:layout_below="@id/toolbar"/>
+        android:src="@drawable/iphone_15_pro" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_item_product"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/dapatkan_iphone_berikut_dengan_harga"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/price"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_rincian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_price"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/rincian"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rincian"
+        android:text="@string/description"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp" />
+
 
 </RelativeLayout>
