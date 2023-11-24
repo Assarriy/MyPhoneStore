@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -35,7 +36,9 @@ class ListIphoneAdapter(private val listIphone: ArrayList<Phone>) :
         Glide.with(holder.itemView)
             .load(photo)
             .into(holder.imgPhone)
+        holder.itemView.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "Kamu memilih " + listIphone[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+        }
     }
-
 
 }
