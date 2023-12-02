@@ -7,6 +7,9 @@
     <string name="rincian">Rincian</string>
     <string name="dapatkan_sekarang">Dapatkan Sekarang</string>
     <string name="detail_iphone">Detail iPhone</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="profile">Profile</string>
 
     <string-array name="data_name">
         <item>iPhone 15 Pro</item>
