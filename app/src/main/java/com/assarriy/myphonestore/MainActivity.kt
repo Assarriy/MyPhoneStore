@@ -4,7 +4,9 @@ import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.renderscript.ScriptGroup.Binding
+import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.assarriy.myphonestore.databinding.ActivityMainBinding
@@ -23,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         rvIphone.setHasFixedSize(true)
         list.addAll(getListIphone())
         showRecyclerList()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     private fun getListIphone(): ArrayList<Phone> {
@@ -47,6 +54,14 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home){
             onBackPressed()
+        }
+        when (item.itemId){
+            R.id.action_list -> {
+                rvIphone.layoutManager = LinearLayoutManager(this)
+            }
+            R.id.action_grid -> {
+                rvIphone.layoutManager = GridLayoutManager(this, 2)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
