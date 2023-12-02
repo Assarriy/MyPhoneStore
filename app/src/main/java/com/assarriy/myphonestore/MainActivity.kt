@@ -55,14 +55,6 @@ class MainActivity : AppCompatActivity() {
         if (item.itemId == android.R.id.home){
             onBackPressed()
         }
-        when (item.itemId){
-            R.id.action_list -> {
-                rvIphone.layoutManager = LinearLayoutManager(this)
-            }
-            R.id.action_grid -> {
-                rvIphone.layoutManager = GridLayoutManager(this, 2)
-            }
-        }
         return super.onOptionsItemSelected(item)
     }
 }
