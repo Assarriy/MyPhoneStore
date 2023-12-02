@@ -4,16 +4,20 @@ import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.renderscript.ScriptGroup.Binding
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.assarriy.myphonestore.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     private lateinit var rvIphone: RecyclerView
     private val list = ArrayList<Phone>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
         rvIphone = findViewById(R.id.rv_iphone)
         rvIphone.setHasFixedSize(true)
@@ -38,5 +42,12 @@ class MainActivity : AppCompatActivity() {
         rvIphone.layoutManager = LinearLayoutManager(this)
         val listHeroAdapter = ListIphoneAdapter(list)
         rvIphone.adapter = listHeroAdapter
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home){
+            onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

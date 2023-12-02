@@ -1,5 +1,6 @@
 package com.assarriy.myphonestore
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,15 +30,19 @@ class ListIphoneAdapter(private val listIphone: ArrayList<Phone>) :
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, price, description, photo) = listIphone[position]
-        holder.tvName.text = name
-        holder.tvPrice.text = price
-        holder.tvDescription.text = description
+        val iphone = listIphone[position]
+        holder.tvName.text = iphone.name
+        holder.tvPrice.text = iphone.price
+        holder.tvDescription.text = iphone.name
         Glide.with(holder.itemView)
-            .load(photo)
+            .load(iphone.photo)
             .into(holder.imgPhone)
+
         holder.itemView.setOnClickListener {
             Toast.makeText(holder.itemView.context, "Kamu memilih " + listIphone[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+            val intet  = Intent(it.context, DetailIphoneActivity::class.java)
+            intet.putExtra(DetailIphoneActivity.EXTRA_IPHONE, iphone)
+            it.context.startActivity(intet)
         }
     }
 
