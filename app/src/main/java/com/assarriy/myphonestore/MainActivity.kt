@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
                 val moveIntent = Intent(this@MainActivity, ProfileActivity::class.java)
                 startActivity(moveIntent)
             }
+
         }
         return super.onOptionsItemSelected(item)
     }

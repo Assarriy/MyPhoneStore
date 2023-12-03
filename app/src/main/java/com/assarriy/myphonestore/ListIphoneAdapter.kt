@@ -33,16 +33,16 @@ class ListIphoneAdapter(private val listIphone: ArrayList<Phone>) :
         val iphone = listIphone[position]
         holder.tvName.text = iphone.name
         holder.tvPrice.text = iphone.price
-        holder.tvDescription.text = iphone.name
+        holder.tvDescription.text = iphone.description
         Glide.with(holder.itemView)
             .load(iphone.photo)
             .into(holder.imgPhone)
 
         holder.itemView.setOnClickListener {
             Toast.makeText(holder.itemView.context, "Kamu memilih " + listIphone[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
-            val intet  = Intent(it.context, DetailIphoneActivity::class.java)
-            intet.putExtra(DetailIphoneActivity.EXTRA_IPHONE, iphone)
-            it.context.startActivity(intet)
+            val intent  = Intent(it.context, DetailIphoneActivity::class.java)
+            intent.putExtra(DetailIphoneActivity.EXTRA_IPHONE, iphone)
+            it.context.startActivity(intent)
         }
     }
 

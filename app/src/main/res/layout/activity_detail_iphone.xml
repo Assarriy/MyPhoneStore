@@ -20,7 +20,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar">
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,16 +89,17 @@
                 android:text="@string/description" />
 
             <Button
-                android:layout_gravity="center"
-                android:gravity="center"
                 android:id="@+id/btn_buy"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_below="@id/tv_item_description"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#232D3F"
                 android:fontFamily="@font/poppins_medium"
-                android:text="@string/dapatkan_sekarang" />
+                android:gravity="center"
+                android:text="@string/dapatkan_sekarang"
+                />
 
 
         </LinearLayout>

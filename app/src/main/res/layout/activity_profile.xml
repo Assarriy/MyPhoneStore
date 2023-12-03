@@ -4,15 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5FAFF"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232D3F"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/about_me"
+        app:titleTextAppearance="@style/ToolbarFont"
+        app:titleTextColor="@color/white" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#6BA4CA"
+        app:cardBackgroundColor="#232D3F"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp">
 
@@ -23,15 +33,15 @@
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/foto" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Wibowo Assariy"
                 android:textColor="@color/white"
@@ -41,9 +51,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Android Developer"
+                android:text="@string/wibowoassariy23_gmail_com"
                 android:textColor="@color/white" />
 
         </LinearLayout>
