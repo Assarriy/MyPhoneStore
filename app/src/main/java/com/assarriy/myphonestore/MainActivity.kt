@@ -1,5 +1,6 @@
 package com.assarriy.myphonestore
 
+import android.content.Intent
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,8 +39,9 @@ class MainActivity : AppCompatActivity() {
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
         val listIphone = ArrayList<Phone>()
-        for (i in dataName.indices){
-            val phone = Phone(dataName[i], dataPrice[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+        for (i in dataName.indices) {
+            val phone =
+                Phone(dataName[i], dataPrice[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
             listIphone.add(phone)
         }
         return listIphone
@@ -52,8 +54,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == android.R.id.home){
+        if (item.itemId == android.R.id.home) {
             onBackPressed()
+        }
+        when (item.itemId) {
+            R.id.action_profile -> {
+                val moveIntent = Intent(this@MainActivity, ProfileActivity::class.java)
+                startActivity(moveIntent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
