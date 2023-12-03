@@ -2,7 +2,6 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MyPhoneStore" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">#232D3F</item>
     </style>
     <style name="ToolbarFont">
         <item name="android:fontFamily">@font/poppins_semibold</item>
