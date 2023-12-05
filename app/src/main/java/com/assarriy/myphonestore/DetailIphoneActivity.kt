@@ -23,6 +23,17 @@ class DetailIphoneActivity : AppCompatActivity() {
         binding.tvItemName.text = iphone.name
         binding.tvItemPrice.text = iphone.price
         binding.tvItemDescription.text = iphone.description
+
+        binding.btnBuy.setOnClickListener {
+            val sendIphone = Intent()
+            sendIphone.action = Intent.ACTION_SEND
+            sendIphone.putExtra(
+                Intent.EXTRA_TEXT,"Produk ${iphone.name}" +
+                        "bisa didapatkan di link berikut ${iphone.url}"
+            )
+            sendIphone.type = "text/plain"
+            startActivity(sendIphone)
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -31,6 +42,7 @@ class DetailIphoneActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
     companion object {
         const val EXTRA_IPHONE = "extra_iphone"
     }

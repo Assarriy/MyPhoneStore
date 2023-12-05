@@ -38,10 +38,11 @@ class MainActivity : AppCompatActivity() {
         val dataPrice = resources.getStringArray(R.array.data_harga)
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val dataURL = resources.getStringArray(R.array.data_url)
         val listIphone = ArrayList<Phone>()
         for (i in dataName.indices) {
             val phone =
-                Phone(dataName[i], dataPrice[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                Phone(dataName[i], dataPrice[i], dataDescription[i], dataURL[i], dataPhoto.getResourceId(i, -1))
             listIphone.add(phone)
         }
         return listIphone

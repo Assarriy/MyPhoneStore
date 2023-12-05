@@ -65,4 +65,18 @@
         <item>@drawable/iphone_11</item>
     </integer-array>
 
+    <string-array name="data_url">
+        <item>https://ibox.co.id/product/IP-15P-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-15-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-14P-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-14-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-13P-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-13-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-12P-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-12-IB-CON</item>
+        <item>https://ibox.co.id/product/IPSE3-IB-CON</item>
+        <item>https://ibox.co.id/product/IP-11-NP-IB-CON</item>
+
+    </string-array>
+
 </resources>
